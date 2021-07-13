@@ -8,7 +8,7 @@ export const Content = styled.div`
  display: flex;
  max-width: 1120px;
  margin: 0 auto;
- padding: 2rem 0 8.5rem;
+ padding: 2rem 1rem 8.5rem;
  justify-content: space-between;
 
  button { 
