@@ -15,9 +15,6 @@ export const Container = styled.div`
       text-align: left;
     }
 
-    tr { 
-    }
-
     td { 
       border: 0;
       border-radius: .25rem;
