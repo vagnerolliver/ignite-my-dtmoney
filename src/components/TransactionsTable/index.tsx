@@ -1,12 +1,12 @@
 import { useEffect } from 'react';
+import axios from 'axios';
 
 import { Container } from './styles';
 
 export function TransactionsTable() {
   useEffect(()=>{
-    fetch("http://localhost:3000/api/transactions")
-      .then(response => response.json())
-      .then(data => console.log(data))
+    axios("http://localhost:3000/api/transactions")
+      .then(({ data }) => console.log(data))
   },[])
 
   return (
