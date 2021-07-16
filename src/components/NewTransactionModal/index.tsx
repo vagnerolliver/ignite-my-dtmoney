@@ -1,6 +1,6 @@
 import Modal from "react-modal";
  
-// import { styles } from './styles';
+import { Container } from './styles';
 interface NewTransactionModalProps {
   isOpen: boolean;
   onRequestClose: () => void;
@@ -11,8 +11,12 @@ export function NewTransactionModal({ isOpen, onRequestClose }: NewTransactionMo
     <Modal 
       isOpen={isOpen}
       onRequestClose={onRequestClose}
+      overlayClassName="react-modal-overlay"
+      className="react-modal-content"
     >
-    <h2>Olá Hello World</h2>
-  </Modal>
+      <Container>
+        <h2>Olá Hello World</h2>
+      </Container>
+    </Modal>
   );
 }
