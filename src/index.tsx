@@ -15,7 +15,7 @@ createServer({
         {
           id: 1,
           title: 'Transaction 1',
-          amount: 4000,
+          value: 4000,
           type: 'deposit',
           category: 'Food',
           createdAt: new Date()
@@ -23,8 +23,8 @@ createServer({
         {
           id: 2,
           title: 'Transaction 2',
-          amount: 4000,
-          type: 'deposit',
+          value: 4000,
+          type: 'withdraw',
           category: 'Food',
           createdAt: new Date()
         }
@@ -34,7 +34,7 @@ createServer({
   
   routes() {
     this.namespace = 'api';
-    
+
     this.get('/transactions', () => {
       return this.schema.all('transaction')
     })
