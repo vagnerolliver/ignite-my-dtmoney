@@ -15,7 +15,7 @@ createServer({
         {
           id: 1,
           title: 'Transaction 1',
-          amount: 4000,
+          amount: 1000,
           type: 'deposit',
           category: 'Food',
           createdAt: new Date()
@@ -23,7 +23,7 @@ createServer({
         {
           id: 2,
           title: 'Transaction 2',
-          amount: 4000,
+          amount: 200,
           type: 'withdraw',
           category: 'Food',
           createdAt: new Date()
